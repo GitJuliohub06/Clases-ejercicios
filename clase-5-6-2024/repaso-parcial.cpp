@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
     int opcion_usuario = 0;
-float pmens = 0, SBR= 0, Fi_mes[]={},IBC_Dolraes=0,IBC_colones[]={},  t=0, w=0, n=0, i=0, IPCr=0, IPCi=0, Fi = 0;    
+float pmens = 0, SBR= 0, Fi_mes=0,IBC_Dolraes=0,IBC_colones=0,  t=0, w=0, n=0, i=0, IPCr=0, IPCi=0, Fi = 0;    
 
 float sumadelIBC_colones=0, sumadelIBC_Dolares=0; 
 
@@ -22,7 +22,7 @@ case 1: cout<<"\tEligio la opcion de pension para los optados.\n";
 cout<<"";
 Fi= IPCr/IPCi;
  for(int j=1;j<=t-w;j++){
-    sumadelIBC_colones= (IBC_colones*Fi)/8.75;
+    sumadelIBC_colones= sumadelIBC_colones + (IBC_colones*Fi_mes)/8.75;
 }
 SBR =
 
