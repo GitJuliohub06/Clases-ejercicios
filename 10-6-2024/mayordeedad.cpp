@@ -9,13 +9,16 @@ int main(int argc, char* argv[])
     cin>>*apuntador;  //almacenamos n la memoria el dato 
     
 
-if (x>=18){
+if (*apuntador>=18){
     cout<<"Usted es mayor de edad \n";
 }
 
 else{
         cout<<"Usted es menor de edad \n";
 }
+
+    cout<<"El valor ingresado fue: "<< *apuntador<<endl ;
+
     cout<<"El espacio de memoria de la variable es:  "<< &apuntador <<"\n";
 
     delete [] apuntador;  //Despues de operar con punteros es necesario liberar la memoria
